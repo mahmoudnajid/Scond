@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "299852619881",
+    "project_id": "ass1cloud-74e9d",
+    "storage_bucket": "ass1cloud-74e9d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:299852619881:android:d716307457b0d5e3b482f8",
+        "android_client_info": {
+          "package_name": "mahmoud.naji.ass1cloud"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "299852619881-r5019tj9m4oip022b184spjr6a0h3rh3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCDWjC9crnt_7d_JFw7_ReaGAEqujynN1c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "299852619881-r5019tj9m4oip022b184spjr6a0h3rh3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:299852619881:android:65d282632962c332b482f8",
+        "android_client_info": {
+          "package_name": "mahmoud.naji.ass1computing"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "299852619881-r5019tj9m4oip022b184spjr6a0h3rh3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCDWjC9crnt_7d_JFw7_ReaGAEqujynN1c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "299852619881-r5019tj9m4oip022b184spjr6a0h3rh3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
