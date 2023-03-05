@@ -1,36 +1,39 @@
-package mahmoud.naji.ass1computing
+package com.mo7ammedtabasi.assignment_1
 
 import android.content.Context
 import android.view.LayoutInflater
+import android.view.View
 import android.view.ViewGroup
-import android.widget.ArrayAdapter
-import com.google.firebase.firestore.core.View
-import kotlinx.android.synthetic.main.add_data.view.*
+import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.list.view.*
+import mahmoud.naji.ass1computing.Data
+import mahmoud.naji.ass1computing.R
 
 
-class Ad(context: Context, datalist :List<Data>)
-    : ArrayAdapter<Data>(context, 0, datalist ) {
-    override fun getView(
-        position: Int,
-        convertView: android.view.View?,
-        parent: ViewGroup
-    ): android.view.View {
-        val view = LayoutInflater.from(context).inflate(R.layout.list, parent, false)
-        val data: Data?? = getItem(position)
+class AdapterData(private var context: Context, private var dataList:ArrayList<Data>)
+    : RecyclerView.Adapter<AdapterData.ViewHolder>(){
+
+    class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView){
+        val name = itemView.tvname
+        val num = itemView.tvnum
+        val address = itemView.tvaddress
 
 
-            view.tvname.text = data?.name
-            view.tvnum.text = data?.num
-            view.tvaddress.text = data?.address
+    }
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
+        val itemView = LayoutInflater.from(parent.context).inflate(R.layout.list, parent, false)
+        return ViewHolder(itemView)
+    }
 
+    override fun getItemCount(): Int = dataList.size
 
+    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
+        val data= dataList[position]
 
-
-        return view
-
-
-    }}
-
+        holder.name.text = data.name
+        holder.num.text = data.phone
+        holder.address.text = data.address
+    }
+}
 
 
